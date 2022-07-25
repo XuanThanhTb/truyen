@@ -50,6 +50,7 @@ class _HomePageState extends State<HomePage> {
                       children: [
                         CachedNetworkImage(
                           fit: BoxFit.contain,
+                          
                           imageUrl:
                               "https://intphcm.com/data/upload/mau-banner-hinh-anh.jpg",
                           placeholder: (context, url) => Padding(
