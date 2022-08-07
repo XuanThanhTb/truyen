@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:carousel_pro/carousel_pro.dart';
 import 'package:carousel_slider/carousel_options.dart';
@@ -23,224 +25,409 @@ class _HomePageState extends State<HomePage> {
     super.initState();
   }
 
+  Widget _viewBanner() {
+    return Container(
+      margin: const EdgeInsets.only(bottom: 16),
+      // height: 200,
+      child: Column(
+        children: [
+          SizedBox(
+            height: 150,
+            width: double.infinity,
+            child: Carousel(
+              dotSize: 5,
+              dotSpacing: 15,
+              dotColor: Colors.black12,
+              indicatorBgPadding: 5,
+              dotBgColor: Colors.transparent,
+              dotVerticalPadding: 5,
+              dotPosition: DotPosition.bottomCenter,
+              images: [
+                Stack(
+                  children: [
+                    CachedNetworkImage(
+                      fit: BoxFit.contain,
+                      imageUrl:
+                          "https://intphcm.com/data/upload/mau-banner-hinh-anh.jpg",
+                      placeholder: (context, url) => Padding(
+                        padding: const EdgeInsets.all(32),
+                        child: CircularProgressIndicator(),
+                      ),
+                      errorWidget: (context, url, error) => Icon(Icons.error),
+                    ),
+                    Positioned(
+                      top: 8,
+                      right: 0,
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.yellow,
+                          borderRadius: BorderRadius.only(
+                            topLeft: Radius.circular(8),
+                            bottomLeft: Radius.circular(8),
+                          ),
+                        ),
+                        padding: const EdgeInsets.only(left: 4, right: 4),
+                        child: Center(
+                          child: Text(
+                            "4.5",
+                            style: new TextStyle(
+                                fontSize: 11.0,
+                                color: Colors.black,
+                                fontWeight: FontWeight.w400),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                Stack(
+                  children: [
+                    CachedNetworkImage(
+                      fit: BoxFit.contain,
+                      imageUrl:
+                          "https://intphcm.com/data/upload/mau-banner-hinh-anh.jpg",
+                      placeholder: (context, url) => Padding(
+                        padding: const EdgeInsets.all(32),
+                        child: CircularProgressIndicator(),
+                      ),
+                      errorWidget: (context, url, error) => Icon(Icons.error),
+                    ),
+                    Positioned(
+                      top: 8,
+                      right: 0,
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.yellow,
+                          borderRadius: BorderRadius.only(
+                            topLeft: Radius.circular(8),
+                            bottomLeft: Radius.circular(8),
+                          ),
+                        ),
+                        padding: const EdgeInsets.only(left: 4, right: 4),
+                        child: Center(
+                          child: Text(
+                            "4.5",
+                            style: new TextStyle(
+                                fontSize: 11.0,
+                                color: Colors.black,
+                                fontWeight: FontWeight.w400),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                Stack(
+                  children: [
+                    CachedNetworkImage(
+                      fit: BoxFit.contain,
+                      imageUrl:
+                          "https://intphcm.com/data/upload/mau-banner-hinh-anh.jpg",
+                      placeholder: (context, url) => Padding(
+                        padding: const EdgeInsets.all(32),
+                        child: CircularProgressIndicator(),
+                      ),
+                      errorWidget: (context, url, error) => Icon(Icons.error),
+                    ),
+                    Positioned(
+                      top: 8,
+                      right: 0,
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.yellow,
+                          borderRadius: BorderRadius.only(
+                            topLeft: Radius.circular(8),
+                            bottomLeft: Radius.circular(8),
+                          ),
+                        ),
+                        padding: const EdgeInsets.only(left: 4, right: 4),
+                        child: Center(
+                          child: Text(
+                            "4.5",
+                            style: new TextStyle(
+                                fontSize: 11.0,
+                                color: Colors.black,
+                                fontWeight: FontWeight.w400),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                Stack(
+                  children: [
+                    CachedNetworkImage(
+                      fit: BoxFit.contain,
+                      imageUrl:
+                          "https://intphcm.com/data/upload/mau-banner-hinh-anh.jpg",
+                      placeholder: (context, url) => Padding(
+                        padding: const EdgeInsets.all(32),
+                        child: CircularProgressIndicator(),
+                      ),
+                      errorWidget: (context, url, error) => Icon(Icons.error),
+                    ),
+                    Positioned(
+                      top: 8,
+                      right: 0,
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.yellow,
+                          borderRadius: BorderRadius.only(
+                            topLeft: Radius.circular(8),
+                            bottomLeft: Radius.circular(8),
+                          ),
+                        ),
+                        padding: const EdgeInsets.only(left: 4, right: 4),
+                        child: Center(
+                          child: Text(
+                            "4.5",
+                            style: new TextStyle(
+                                fontSize: 11.0,
+                                color: Colors.black,
+                                fontWeight: FontWeight.w400),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                Stack(
+                  children: [
+                    CachedNetworkImage(
+                      fit: BoxFit.contain,
+                      imageUrl:
+                          "https://intphcm.com/data/upload/mau-banner-hinh-anh.jpg",
+                      placeholder: (context, url) => Padding(
+                        padding: const EdgeInsets.all(32),
+                        child: CircularProgressIndicator(),
+                      ),
+                      errorWidget: (context, url, error) => Icon(Icons.error),
+                    ),
+                    Positioned(
+                      top: 8,
+                      right: 0,
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.yellow,
+                          borderRadius: BorderRadius.only(
+                            topLeft: Radius.circular(8),
+                            bottomLeft: Radius.circular(8),
+                          ),
+                        ),
+                        padding: const EdgeInsets.only(left: 4, right: 4),
+                        child: Center(
+                          child: Text(
+                            "4.5",
+                            style: new TextStyle(
+                                fontSize: 11.0,
+                                color: Colors.black,
+                                fontWeight: FontWeight.w400),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          )
+        ],
+      ),
+    );
+  }
+
+  Widget _viewIcon() {
+    return Container(
+      padding: const EdgeInsets.all(8.0),
+      child: Row(
+        // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Expanded(
+            flex: 2,
+            child: InkWell(
+              onTap: () {
+                ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                  content: Text("Tính năng đang phát triển :)",
+                      style: TextStyle(fontSize: 18)),
+                  backgroundColor: Colors.red,
+                ));
+              },
+              child: Column(
+                children: [
+                  Icon(
+                    Icons.landscape,
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Text(
+                    "Schedule",
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    textAlign: TextAlign.left,
+                    style: new TextStyle(
+                        fontSize: 11.0,
+                        color: Colors.black12,
+                        fontWeight: FontWeight.normal),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          Expanded(
+            flex: 2,
+            child: InkWell(
+              onTap: () {
+                ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                  content: Text("Tính năng đang phát triển :)",
+                      style: TextStyle(fontSize: 18)),
+                  backgroundColor: Colors.red,
+                ));
+              },
+              child: Column(
+                children: [
+                  Icon(
+                    Icons.timer,
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Text(
+                    "Wait For Free",
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    textAlign: TextAlign.left,
+                    style: new TextStyle(
+                        fontSize: 11.0,
+                        color: Colors.black12,
+                        fontWeight: FontWeight.normal),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          Expanded(
+            flex: 2,
+            child: InkWell(
+              onTap: () {
+                ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                  content: Text("Tính năng đang phát triển :)",
+                      style: TextStyle(fontSize: 18)),
+                  backgroundColor: Colors.red,
+                ));
+              },
+              child: Column(
+                children: [
+                  Icon(
+                    Icons.free_breakfast_sharp,
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Text(
+                    "Free",
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    textAlign: TextAlign.left,
+                    style: new TextStyle(
+                        fontSize: 11.0,
+                        color: Colors.black12,
+                        fontWeight: FontWeight.normal),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          Expanded(
+            flex: 2,
+            child: InkWell(
+              onTap: () {
+                ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                  content: Text("Tính năng đang phát triển :)",
+                      style: TextStyle(fontSize: 18)),
+                  backgroundColor: Colors.red,
+                ));
+              },
+              child: Column(
+                children: [
+                  Icon(
+                    Icons.airplane_ticket_sharp,
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Text(
+                    "Tickets",
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    textAlign: TextAlign.left,
+                    style: new TextStyle(
+                        fontSize: 11.0,
+                        color: Colors.black12,
+                        fontWeight: FontWeight.normal),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          Expanded(
+            flex: 2,
+            child: InkWell(
+              onTap: () {
+                ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                  content: Text("Tính năng đang phát triển :)",
+                      style: TextStyle(fontSize: 18)),
+                  backgroundColor: Colors.red,
+                ));
+              },
+              child: Column(
+                children: [
+                  Icon(
+                    Icons.reviews_sharp,
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Text(
+                    "Rewards",
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    textAlign: TextAlign.left,
+                    style: new TextStyle(
+                        fontSize: 11.0,
+                        color: Colors.black12,
+                        fontWeight: FontWeight.normal),
+                  ),
+                ],
+              ),
+            ),
+          )
+        ],
+      ),
+    );
+  }
+
   Widget buildGridView(List<Data> listDataHome) {
     var size = MediaQuery.of(context).size;
     final double itemHeight = (size.height - 16) / 3;
     final double itemWidth = size.width / 3;
     return Column(
+      mainAxisAlignment: MainAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Container(
-          margin: const EdgeInsets.only(bottom: 16),
-          // height: 200,
-          child: Column(
-            children: [
-              SizedBox(
-                height: 150,
-                width: double.infinity,
-                child: Carousel(
-                  dotSize: 5,
-                  dotSpacing: 15,
-                  dotColor: Colors.black12,
-                  indicatorBgPadding: 5,
-                  dotBgColor: Colors.transparent,
-                  dotVerticalPadding: 5,
-                  dotPosition: DotPosition.bottomCenter,
-                  images: [
-                    Stack(
-                      children: [
-                        CachedNetworkImage(
-                          fit: BoxFit.contain,
-                          
-                          imageUrl:
-                              "https://intphcm.com/data/upload/mau-banner-hinh-anh.jpg",
-                          placeholder: (context, url) => Padding(
-                            padding: const EdgeInsets.all(32),
-                            child: CircularProgressIndicator(),
-                          ),
-                          errorWidget: (context, url, error) =>
-                              Icon(Icons.error),
-                        ),
-                        Positioned(
-                          top: 8,
-                          right: 0,
-                          child: Container(
-                            decoration: BoxDecoration(
-                              color: Colors.yellow,
-                              borderRadius: BorderRadius.only(
-                                topLeft: Radius.circular(8),
-                                bottomLeft: Radius.circular(8),
-                              ),
-                            ),
-                            padding: const EdgeInsets.only(left: 4, right: 4),
-                            child: Center(
-                              child: Text(
-                                "4.5",
-                                style: new TextStyle(
-                                    fontSize: 11.0,
-                                    color: Colors.black,
-                                    fontWeight: FontWeight.w400),
-                              ),
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                    Stack(
-                      children: [
-                        CachedNetworkImage(
-                          fit: BoxFit.contain,
-                          imageUrl:
-                              "https://intphcm.com/data/upload/mau-banner-hinh-anh.jpg",
-                          placeholder: (context, url) => Padding(
-                            padding: const EdgeInsets.all(32),
-                            child: CircularProgressIndicator(),
-                          ),
-                          errorWidget: (context, url, error) =>
-                              Icon(Icons.error),
-                        ),
-                        Positioned(
-                          top: 8,
-                          right: 0,
-                          child: Container(
-                            decoration: BoxDecoration(
-                              color: Colors.yellow,
-                              borderRadius: BorderRadius.only(
-                                topLeft: Radius.circular(8),
-                                bottomLeft: Radius.circular(8),
-                              ),
-                            ),
-                            padding: const EdgeInsets.only(left: 4, right: 4),
-                            child: Center(
-                              child: Text(
-                                "4.5",
-                                style: new TextStyle(
-                                    fontSize: 11.0,
-                                    color: Colors.black,
-                                    fontWeight: FontWeight.w400),
-                              ),
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                    Stack(
-                      children: [
-                        CachedNetworkImage(
-                          fit: BoxFit.contain,
-                          imageUrl:
-                              "https://intphcm.com/data/upload/mau-banner-hinh-anh.jpg",
-                          placeholder: (context, url) => Padding(
-                            padding: const EdgeInsets.all(32),
-                            child: CircularProgressIndicator(),
-                          ),
-                          errorWidget: (context, url, error) =>
-                              Icon(Icons.error),
-                        ),
-                        Positioned(
-                          top: 8,
-                          right: 0,
-                          child: Container(
-                            decoration: BoxDecoration(
-                              color: Colors.yellow,
-                              borderRadius: BorderRadius.only(
-                                topLeft: Radius.circular(8),
-                                bottomLeft: Radius.circular(8),
-                              ),
-                            ),
-                            padding: const EdgeInsets.only(left: 4, right: 4),
-                            child: Center(
-                              child: Text(
-                                "4.5",
-                                style: new TextStyle(
-                                    fontSize: 11.0,
-                                    color: Colors.black,
-                                    fontWeight: FontWeight.w400),
-                              ),
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                    Stack(
-                      children: [
-                        CachedNetworkImage(
-                          fit: BoxFit.contain,
-                          imageUrl:
-                              "https://intphcm.com/data/upload/mau-banner-hinh-anh.jpg",
-                          placeholder: (context, url) => Padding(
-                            padding: const EdgeInsets.all(32),
-                            child: CircularProgressIndicator(),
-                          ),
-                          errorWidget: (context, url, error) =>
-                              Icon(Icons.error),
-                        ),
-                        Positioned(
-                          top: 8,
-                          right: 0,
-                          child: Container(
-                            decoration: BoxDecoration(
-                              color: Colors.yellow,
-                              borderRadius: BorderRadius.only(
-                                topLeft: Radius.circular(8),
-                                bottomLeft: Radius.circular(8),
-                              ),
-                            ),
-                            padding: const EdgeInsets.only(left: 4, right: 4),
-                            child: Center(
-                              child: Text(
-                                "4.5",
-                                style: new TextStyle(
-                                    fontSize: 11.0,
-                                    color: Colors.black,
-                                    fontWeight: FontWeight.w400),
-                              ),
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                    Stack(
-                      children: [
-                        CachedNetworkImage(
-                          fit: BoxFit.contain,
-                          imageUrl:
-                              "https://intphcm.com/data/upload/mau-banner-hinh-anh.jpg",
-                          placeholder: (context, url) => Padding(
-                            padding: const EdgeInsets.all(32),
-                            child: CircularProgressIndicator(),
-                          ),
-                          errorWidget: (context, url, error) =>
-                              Icon(Icons.error),
-                        ),
-                        Positioned(
-                          top: 8,
-                          right: 0,
-                          child: Container(
-                            decoration: BoxDecoration(
-                              color: Colors.yellow,
-                              borderRadius: BorderRadius.only(
-                                topLeft: Radius.circular(8),
-                                bottomLeft: Radius.circular(8),
-                              ),
-                            ),
-                            padding: const EdgeInsets.only(left: 4, right: 4),
-                            child: Center(
-                              child: Text(
-                                "4.5",
-                                style: new TextStyle(
-                                    fontSize: 11.0,
-                                    color: Colors.black,
-                                    fontWeight: FontWeight.w400),
-                              ),
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ],
-                ),
-              )
-            ],
+        _viewBanner(),
+        _viewIcon(),
+        Padding(
+          padding: const EdgeInsets.only(top: 0, bottom: 8, left: 8),
+          child: Text(
+            "Trands-Hottest Comic",
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
+            textAlign: TextAlign.left,
+            style: new TextStyle(
+                fontSize: 15.0,
+                color: Colors.black,
+                fontWeight: FontWeight.bold),
           ),
         ),
         Expanded(
@@ -256,7 +443,10 @@ class _HomePageState extends State<HomePage> {
                   onTap: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => ReadComic()),
+                      MaterialPageRoute(
+                          builder: (context) => ReadComic(
+                                listChapter: value.chapter,
+                              )),
                     );
                   },
                   child: new Container(
@@ -275,7 +465,8 @@ class _HomePageState extends State<HomePage> {
                                 imageUrl: "${value.thumbnail}",
                                 placeholder: (context, url) => Padding(
                                   padding: const EdgeInsets.all(32),
-                                  child: CircularProgressIndicator(),
+                                  child: Center(
+                                      child: CircularProgressIndicator()),
                                 ),
                                 errorWidget: (context, url, error) =>
                                     Icon(Icons.error),
