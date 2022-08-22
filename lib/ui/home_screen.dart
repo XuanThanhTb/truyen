@@ -73,7 +73,7 @@ class _HomePageState extends State<HomePage> {
                             style: new TextStyle(
                                 fontSize: 11.0,
                                 color: Colors.black,
-                                fontWeight: FontWeight.w400),
+                                fontWeight: FontWeight.w600),
                           ),
                         ),
                       ),
