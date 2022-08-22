@@ -46,7 +46,7 @@ class _HomePageState extends State<HomePage> {
                 Stack(
                   children: [
                     CachedNetworkImage(
-                      fit: BoxFit.contain,
+                      fit: BoxFit.cover,
                       imageUrl:
                           "https://intphcm.com/data/upload/mau-banner-hinh-anh.jpg",
                       placeholder: (context, url) => Padding(
@@ -110,7 +110,7 @@ class _HomePageState extends State<HomePage> {
                             style: new TextStyle(
                                 fontSize: 11.0,
                                 color: Colors.black,
-                                fontWeight: FontWeight.w400),
+                                fontWeight: FontWeight.w500),
                           ),
                         ),
                       ),
