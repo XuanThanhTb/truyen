@@ -146,6 +146,13 @@ class _ReadComicState extends State<ReadComic> {
 
 
                   backgroundColor: Colors.black,
+
+
+
+
+
+
+                  
                 ));
 
 
