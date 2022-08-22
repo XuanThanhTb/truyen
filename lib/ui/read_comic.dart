@@ -144,9 +144,16 @@ class _ReadComicState extends State<ReadComic> {
 
 
 
-                      
+
                   backgroundColor: Colors.black,
                 ));
+
+
+
+
+
+
+                
               },
               child: Container(
                 width: MediaQuery.of(context).size.width - 32,
