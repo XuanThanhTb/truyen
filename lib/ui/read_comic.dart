@@ -153,6 +153,16 @@ class _ReadComicState extends State<ReadComic> {
 
 
                   
+
+
+
+
+
+
+
+
+
+
                 ));
 
 
@@ -160,7 +170,7 @@ class _ReadComicState extends State<ReadComic> {
 
 
 
-                
+
               },
               child: Container(
                 width: MediaQuery.of(context).size.width - 32,
@@ -176,7 +186,7 @@ class _ReadComicState extends State<ReadComic> {
                   style: new TextStyle(
                       fontSize: 16.0,
                       color: Colors.black,
-                      fontWeight: FontWeight.w900),
+                      fontWeight: FontWeight.w400),
                 )),
               ),
             ),
