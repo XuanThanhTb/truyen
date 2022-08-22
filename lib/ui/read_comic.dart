@@ -131,6 +131,7 @@ class _ReadComicState extends State<ReadComic> {
             child: InkWell(
               onTap: () {
                 ///
+                //////
                 ScaffoldMessenger.of(context).showSnackBar(SnackBar(
                   content: Text("Tính năng đang phát triển :::::)",
                       style: TextStyle(fontSize: 18)),
